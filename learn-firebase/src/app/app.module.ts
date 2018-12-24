@@ -10,8 +10,8 @@ import { DirectoryComponent } from './directory/directory.component';
 import { Route } from '@angular/router/src/config';
 
 const APP_ROUTES: Routes = [
-  {path: 'directory', component: DirectoryComponent },
   {path: '', component:  HomeComponent },
+  {path: 'directory', component: DirectoryComponent },
 ]
 
 @NgModule({
