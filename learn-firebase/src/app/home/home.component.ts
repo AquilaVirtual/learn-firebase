@@ -7,7 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-   homeTitle = "Welcome Home!"; 
+   homeTitle = "Welcome Fruits directory!"; 
    @Input() fruits;
    @Output() onYell = new EventEmitter;
 
