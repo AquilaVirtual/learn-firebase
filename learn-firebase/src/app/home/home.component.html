@@ -1,3 +1,12 @@
 <p>
-  home works!
+  {{ homeTitle}}
 </p>
+<ng-content></ng-content>
+
+<!-- two way binding -->
+
+<p>{{fruits.name}}</p>
+<p>{{fruits.color}}</p>
+<button (click)="fireYellEvent($event)">Hit me</button>
+
+

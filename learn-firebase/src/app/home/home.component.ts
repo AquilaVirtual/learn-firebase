@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+   homeTitle = "Welcome Home!"; 
+   @Input() fruits;
+   @Output() onYell = new EventEmitter;
 
+   fireYellEvent(e){
+     this.onYell.emit();
+     console.log(e);
+   }
+   constructor() { }
   ngOnInit() {
   }
 
