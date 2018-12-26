@@ -12,6 +12,7 @@ import { Route } from '@angular/router/src/config';
 const APP_ROUTES: Routes = [
   {path: '', component:  HomeComponent },
   {path: 'directory/:fruit', component: DirectoryComponent },
+  {path: 'directory', component: DirectoryComponent },
 ]
 
 @NgModule({
