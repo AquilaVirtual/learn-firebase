@@ -1,24 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { FilterPipe } from '../filter.pipe';
-
+import { Component, OnInit } from "@angular/core";
+import { FilterPipe } from "../filter.pipe";
 
 @Component({
-  selector: 'app-directory',
-  templateUrl: './directory.component.html',
-  styleUrls: ['./directory.component.css'],
+  selector: "app-directory",
+  templateUrl: "./directory.component.html",
+  styleUrls: ["./directory.component.css"],
   pipes: [FilterPipe]
 })
 export class DirectoryComponent implements OnInit {
+  constructor() {}
 
-  constructor() {  
-   }
- 
-   fruits =[
-     { name: "Apple", color: "red" },
-     { name: "Orange", color: "orange" },
-     { name: "Pineapple", color: "yellow" }
-   ]
-  ngOnInit() {
-  }
-
+  fruits = [
+    { name: "Apple", color: "red" },
+    { name: "Orange", color: "orange" },
+    { name: "Pineapple", color: "yellow" }
+  ];
+  ngOnInit() {}
 }
