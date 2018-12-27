@@ -10,6 +10,8 @@ export class DirectoryComponent implements OnInit {
 
   constructor() {  
    }
+
+   term: string;
    fruits =[
      { name: "Apple", color: "red" },
      { name: "Orange", color: "orange" },

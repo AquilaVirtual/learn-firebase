@@ -1,11 +1,15 @@
 <h2>List of fruits</h2>
+<form id="filter">
+  <label>Filter fruits by name: </label>
+  <input type="text"  />
+</form>
 <ul id="fruit-listing">
   <li *ngFor="let fruit of fruits">
     <div class="single-fruit">
       <!-- Fruit Color -->
      <span [ngStyle]="{background: fruit.color}">{{fruit.color}} fruit</span>
      <!-- Fruit Name -->
-     <h3>{{fruit.name}}</h3>
+     <h3>{{fruit.name | uppercase }}</h3>
      <div (click) = "remove($event)" [attr.data-name]="fruit.name">delete</div>
     </div>
   </li>
