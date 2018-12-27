@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
-import { switchMap } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-directory',
@@ -8,11 +7,14 @@ import { switchMap } from 'rxjs/operators';
   styleUrls: ['./directory.component.css']
 })
 export class DirectoryComponent implements OnInit {
- fruit: string;
-  constructor(private route: ActivatedRoute) {
-    this.fruit = route.snapshot.params['fruit'];
-   }
 
+  constructor() {  
+   }
+   fruits =[
+     { name: "Apple", color: "red" },
+     { name: "Orange", color: "orange" },
+     { name: "Pineapple", color: "yellow" }
+   ]
   ngOnInit() {
   }
 
