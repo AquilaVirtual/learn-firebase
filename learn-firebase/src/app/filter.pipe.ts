@@ -6,7 +6,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class FilterPipe implements PipeTransform {
 
   transform(fruits: any, term: any): any {
-    return null;
+    if(term === undefined ) return fruits;
+
+    return fruits.filter(function(fruit){
+      return fruit.name.toLowerCase().includes(term.toLowerCase());
+    })
   }
 
 }
