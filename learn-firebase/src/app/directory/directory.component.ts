@@ -5,11 +5,11 @@ import { FilterPipe } from "../filter.pipe";
   selector: "app-directory",
   templateUrl: "./directory.component.html",
   styleUrls: ["./directory.component.css"],
-  pipes: [FilterPipe]
+  // pipes: [FilterPipe]
 })
 export class DirectoryComponent implements OnInit {
   constructor() {}
-
+   public term = "testTerm";
   fruits = [
     { name: "Apple", color: "red" },
     { name: "Orange", color: "orange" },
